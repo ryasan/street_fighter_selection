@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 const StyledCell = styled.div`
-  padding: 30px;
   background: #bdc3c7;
   width: 100%;
   height: 90px;
