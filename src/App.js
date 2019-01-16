@@ -3,11 +3,13 @@ import { Switch, Route } from 'react-router-dom';
 import { withRouter } from 'react-router';
 import StreetFighter from './StreetFighter';
 import { fighters, portraitIds } from './constants';
+import styled from 'styled-components';
 import { flatten } from './utils';
 // components
 import FighterDetails from './FighterDetails';
-import { StyledAppWrapper, StyledCell, StyledGrid, StyledImg } from './common';
+import { StyledAppWrap, StyledCell, StyledGrid, StyledImg } from './common';
 
+// const StyledImgWrap
 class App extends Component {
   constructor(props) {
     super(props);
@@ -46,17 +48,17 @@ class App extends Component {
 
   render = () => {
     return (
-      <StyledAppWrapper>
+      <StyledAppWrap
+        ref={el => (this.elFocus = el)}
+        onKeyDown={this.handleKeyPress}
+        tabIndex="0">
         <Switch>
           <Route path="*" component={FighterDetails} />
         </Switch>
-        <StyledGrid
-          onKeyDown={this.handleKeyPress}
-          tabIndex="0"
-          ref={el => (this.elFocus = el)}>
+        <StyledGrid onKeyDown={this.handleKeyPress}>
           {this.renderFighterCells()}
         </StyledGrid>
-      </StyledAppWrapper>
+      </StyledAppWrap>
     );
   };
 }

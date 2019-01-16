@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import { StyledFighterDetailsWrapper } from './common';
+import { StyledFighterDetailsWrap } from './common';
 
 class FighterDetails extends Component {
   render = () => {
     return (
-      <StyledFighterDetailsWrapper>
+      <StyledFighterDetailsWrap>
         {this.props.location.state}
-      </StyledFighterDetailsWrapper>
+      </StyledFighterDetailsWrap>
     );
   };
 }

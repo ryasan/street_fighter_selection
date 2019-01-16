@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const StyledAppWrapper = styled.div`
+const StyledAppWrap = styled.div`
   border: 2px solid red;
   height: 100%;
   display: flex;
@@ -10,4 +10,4 @@ const StyledAppWrapper = styled.div`
   padding-bottom: 20%;
 `;
 
-export { StyledAppWrapper };
+export { StyledAppWrap };
