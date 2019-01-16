@@ -7,7 +7,6 @@ const StyledAppWrap = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  padding-bottom: 20%;
 `;
 
 export { StyledAppWrap };

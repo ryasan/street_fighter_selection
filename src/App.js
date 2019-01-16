@@ -3,7 +3,6 @@ import { Switch, Route } from 'react-router-dom';
 import { withRouter } from 'react-router';
 import StreetFighter from './StreetFighter';
 import { fighters, portraitIds } from './constants';
-import styled from 'styled-components';
 import { flatten } from './utils';
 // components
 import FighterDetails from './FighterDetails';
