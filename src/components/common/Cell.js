@@ -19,7 +19,7 @@ const activeCSS = () => css`
   animation-fill-mode: forwards;
 `;
 
-const StyledCell = styled.div`
+const Cell = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
@@ -30,4 +30,4 @@ const StyledCell = styled.div`
   ${({ active }) => (active ? activeCSS() : '')}
 `;
 
-export { StyledCell };
+export { Cell };

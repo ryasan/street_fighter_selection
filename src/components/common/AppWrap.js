@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const StyledAppWrap = styled.div`
+const AppWrap = styled.div`
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -8,4 +8,4 @@ const StyledAppWrap = styled.div`
   justify-content: space-around;
 `;
 
-export { StyledAppWrap };
+export { AppWrap };

@@ -9,7 +9,6 @@ const StyledPlayer1 = styled.div`
   display: flex;
   justify-content: center;
   font-size: 12px;
-
   border-left: 1.4em solid transparent;
   border-right: 1.4em solid transparent;
   border-top: 2em solid red;
