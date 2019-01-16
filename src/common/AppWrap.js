@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 const StyledAppWrap = styled.div`
-  border: 2px solid red;
   height: 100%;
   display: flex;
   flex-direction: column;

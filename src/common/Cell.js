@@ -24,7 +24,6 @@ const StyledCell = styled.div`
   height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
   box-sizing: border-box;
   border: 2px solid #eee;
   filter: grayscale(100%);

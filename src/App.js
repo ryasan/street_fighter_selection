@@ -6,9 +6,9 @@ import { fighters, portraitIds } from './constants';
 import { flatten } from './utils';
 // components
 import FighterDetails from './FighterDetails';
+import Player1 from './Player1';
 import { StyledAppWrap, StyledCell, StyledGrid, StyledImg } from './common';
 
-// const StyledImgWrap
 class App extends Component {
   constructor(props) {
     super(props);
@@ -38,7 +38,9 @@ class App extends Component {
         <StyledCell
           key={i}
           onKeyPress={this.handleKeyPress}
-          active={this.state.active === fighter}>
+          active={this.state.active === fighter}
+        >
+          <Player1 />
           <StyledImg src={portraitIds[fighter]} alt={fighter} />
         </StyledCell>
       );
@@ -50,7 +52,8 @@ class App extends Component {
       <StyledAppWrap
         ref={el => (this.elFocus = el)}
         onKeyDown={this.handleKeyPress}
-        tabIndex="0">
+        tabIndex="0"
+      >
         <Switch>
           <Route path="*" component={FighterDetails} />
         </Switch>
