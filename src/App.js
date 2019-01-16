@@ -40,7 +40,7 @@ class App extends Component {
           onKeyPress={this.handleKeyPress}
           active={this.state.active === fighter}
         >
-          <Player1 />
+          {this.state.active === fighter ? <Player1 /> : ''}
           <StyledImg src={portraitIds[fighter]} alt={fighter} />
         </StyledCell>
       );
