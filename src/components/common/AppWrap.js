@@ -5,7 +5,9 @@ const AppWrap = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  outline: none;
+  border: 2px solid red;
 `;
 
 export { AppWrap };

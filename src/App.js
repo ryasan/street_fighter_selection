@@ -2,12 +2,21 @@ import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import { withRouter } from 'react-router';
 import StreetFighter from './StreetFighter';
-import { fighterNames, portraitIds } from './constants';
+import { portraitIds } from './constants';
 import { flatten } from './utils';
+import styled from 'styled-components';
 // components
 import WorldMap from './components/WorldMap';
 import Player1 from './components/Player1';
 import { AppWrap, Cell, Grid, Img } from './components/common';
+
+const FighterGrid = styled(Grid)`
+  justify-items: center;
+  outline: none;
+  margin-top: 5%;
+  grid-template-columns: repeat(6, 120px);
+  border: 2px solid hotpink;
+`;
 
 class App extends Component {
   constructor(props) {
@@ -35,7 +44,7 @@ class App extends Component {
   };
 
   renderFighterCells = () => {
-    return flatten(fighterNames).map((fighter, i) => {
+    return flatten(this.sf.fighterNames).map((fighter, i) => {
       return (
         <Cell
           key={i}
@@ -59,7 +68,9 @@ class App extends Component {
         <Switch>
           <Route path="*" component={WorldMap} />
         </Switch>
-        <Grid onKeyDown={this.handleKeyPress}>{this.renderFighterCells()}</Grid>
+        <FighterGrid onKeyDown={this.handleKeyPress}>
+          {this.renderFighterCells()}
+        </FighterGrid>
       </AppWrap>
     );
   };
