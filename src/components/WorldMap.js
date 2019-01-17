@@ -42,7 +42,7 @@ const MapGrid = styled(Grid)`
 const MapCellWrap = styled.div`
   padding: 10%;
   text-align: center;
-  color: ${({ active, theme }) => (active ? theme.color.primary : 'white')};
+  color: ${({ active, theme }) => (active ? theme.color.secondary : 'white')};
   font-size: 12px;
   font-weight: bolder;
 `;
@@ -53,7 +53,7 @@ const MapCell = styled(Cell)`
   border: none;
   border-radius: 2px;
   box-shadow: ${({ active, theme }) =>
-    active ? `inset 0px 0px 0px 2px ${theme.color.darkGray};` : 'none'};
+    active ? `inset 0px 0px 0px 2px ${theme.color.secondary};` : 'none'};
 `;
 
 export default WorldMap;
