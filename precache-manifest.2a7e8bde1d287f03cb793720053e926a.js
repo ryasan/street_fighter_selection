@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "0d5cdf30b8c7f526936c",
-    "url": "/street_fighter_selection/static/css/main.42e1df95.chunk.css"
+    "revision": "ea42c3336c37d97defeb",
+    "url": "/street_fighter_selection/static/css/main.e1eebcb1.chunk.css"
   },
   {
-    "revision": "0d5cdf30b8c7f526936c",
-    "url": "/street_fighter_selection/static/js/main.0d5cdf30.chunk.js"
+    "revision": "ea42c3336c37d97defeb",
+    "url": "/street_fighter_selection/static/js/main.ea42c333.chunk.js"
   },
   {
     "revision": "04d753ff9b36e8900e46",
@@ -52,7 +52,7 @@ self.__precacheManifest = [
     "url": "/street_fighter_selection/static/media/us.b56eb654.svg"
   },
   {
-    "revision": "69e96f808b1ba932c69ec967692240a2",
+    "revision": "eb9c933200f3ed995df3bea9061e2bf4",
     "url": "/street_fighter_selection/index.html"
   }
 ];
