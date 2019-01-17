@@ -7,13 +7,16 @@ import { flatten } from './utils';
 import styled from 'styled-components';
 // components
 import WorldMap from './components/WorldMap';
+import Dpad from './components/Dpad';
 import Player1 from './components/Player1';
 import { AppWrap, Cell, Grid, Img } from './components/common';
 
 const FighterGrid = styled(Grid)`
+  grid-area: fighters;
   justify-items: center;
   outline: none;
   margin-top: 5%;
+  display: grid;
   grid-template-columns: repeat(6, 120px);
   border: 2px solid hotpink;
 `;
@@ -68,6 +71,7 @@ class App extends Component {
         <Switch>
           <Route path="*" component={WorldMap} />
         </Switch>
+        <Dpad />
         <FighterGrid onKeyDown={this.handleKeyPress}>
           {this.renderFighterCells()}
         </FighterGrid>

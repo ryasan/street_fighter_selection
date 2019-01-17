@@ -9,6 +9,7 @@ const ROWS = 8;
 const COLUMNS = 12;
 
 const WorldMapWrap = styled(Grid)`
+  grid-area: world-map;
   width: 1000px;
   height: 400px;
   background: url(${World}) center center no-repeat;
