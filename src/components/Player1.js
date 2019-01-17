@@ -5,7 +5,7 @@ class Player1 extends Component {
   render = () => {
     return (
       <StyledPlayer1>
-        <StyledText>P1</StyledText>
+        <StyledP1Label>P1</StyledP1Label>
       </StyledPlayer1>
     );
   };
@@ -24,7 +24,7 @@ const StyledPlayer1 = styled.div`
   border-top: 2em solid ${({ theme }) => theme.color.primary};
 `;
 
-const StyledText = styled.div`
+const StyledP1Label = styled.div`
   position: absolute;
   margin-top: -2em;
 `;

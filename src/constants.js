@@ -6,22 +6,34 @@ import {
   Brazil,
   Thailand,
   India,
-  Spain
+  Spain,
+  Balrog,
+  Blanka,
+  Ryu,
+  Ehonda,
+  Guile,
+  Ken,
+  Mbison,
+  Sagat,
+  Chunli,
+  Dhalsim,
+  Vega,
+  Zangief
 } from './images';
 
 const portraitIds = {
-  Ryu: 'https://i.postimg.cc/J0Z3QYqq/ryu.gif',
-  'E.Honda': 'https://i.postimg.cc/qBPjCyLw/ehonda.gif',
-  Blanka: 'https://i.postimg.cc/fRKKFFhq/blanka.gif',
-  Guile: 'https://i.postimg.cc/wB4kxmMh/guile.gif',
-  Balrog: 'https://i.postimg.cc/WpF53XMt/balrog.gif',
-  Vega: 'https://i.postimg.cc/RVxL09Sb/vega.gif',
-  Ken: 'https://i.postimg.cc/QtRk1ZpC/ken.gif',
-  'Chun Li': 'https://i.postimg.cc/MK1t0H3S/chun-li.gif',
-  Zangief: 'https://i.postimg.cc/fW9vZkN9/zangief.gif',
-  Dhalsim: 'https://i.postimg.cc/wjH2wzns/dhalsim.gif',
-  Sagat: 'https://i.postimg.cc/tT1Ns4n8/sagat.gif',
-  'M.Bison': 'https://i.postimg.cc/rpwJLJVV/mbison.gif'
+  Ryu: Ryu,
+  'E.Honda': Ehonda,
+  Blanka: Blanka,
+  Guile: Guile,
+  Balrog: Balrog,
+  Vega: Vega,
+  Ken: Ken,
+  'Chun Li': Chunli,
+  Zangief: Zangief,
+  Dhalsim: Dhalsim,
+  Sagat: Sagat,
+  'M.Bison': Mbison
 };
 
 const mapIds = {
@@ -41,5 +53,6 @@ const mapIds = {
 
 const MAP_ROWS = 8;
 const MAP_COLUMNS = 12;
+const FIGHTER_GRID_WIDTH = 720;
 
-export { portraitIds, mapIds, MAP_ROWS, MAP_COLUMNS };
+export { portraitIds, mapIds, FIGHTER_GRID_WIDTH, MAP_ROWS, MAP_COLUMNS };

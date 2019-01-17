@@ -37,7 +37,6 @@ const MapGrid = styled(Grid)`
   background-size: contain;
   grid-template-columns: repeat(${MAP_COLUMNS}, 1fr);
   grid-template-rows: repeat(${MAP_ROWS}, 1fr);
-  border: 2px solid limegreen;
 `;
 
 const MapCellWrap = styled.div`

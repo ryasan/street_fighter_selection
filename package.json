@@ -4,7 +4,6 @@
   "private": true,
   "homepage": "http://ryasan86.github.io/street_fighter_selection",
   "dependencies": {
-    "lighten": "^0.0.0",
     "polished": "^2.3.3",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",

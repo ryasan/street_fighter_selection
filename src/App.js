@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import { withRouter } from 'react-router';
 import StreetFighter from './StreetFighter';
-import { portraitIds } from './constants';
+import { portraitIds, FIGHTER_GRID_WIDTH } from './constants';
 import { flatten } from './utils';
 import styled from 'styled-components';
 // components
@@ -20,14 +20,12 @@ class App extends Component {
     };
   }
 
-  // focus on selection box
   componentDidMount = () => {
     this.elFocus.focus();
   };
 
-  // route to selected fighter details
-  handleKeyPress = e => {
-    const fighter = this.sf.selectFighter(e.keyCode);
+  goToFighter = keyCode => {
+    const fighter = this.sf.selectFighter(keyCode);
     this.setState({ active: fighter }, () => {
       this.props.history.push({
         pathname: `/${fighter.toLowerCase()}`,
@@ -36,16 +34,26 @@ class App extends Component {
     });
   };
 
+  handleKeyPress = e => {
+    this.goToFighter(e.keyCode);
+  };
+
+  handleDpadPress = keyCode => {
+    this.goToFighter(keyCode);
+  };
+
   renderFighterCells = () => {
+    const { active } = this.state;
     return flatten(this.sf.fighterNames).map((fighter, i) => {
       return (
         <FighterCell
           key={i}
           onKeyPress={this.handleKeyPress}
-          active={this.state.active === fighter}
+          active={active === fighter}
         >
-          {this.state.active === fighter ? <Player1 /> : ''}
+          {active === fighter ? <Player1 /> : ''}
           <Img src={portraitIds[fighter]} alt={fighter} />
+          {active === fighter ? <FighterLabel>{fighter}</FighterLabel> : ''}
         </FighterCell>
       );
     });
@@ -61,7 +69,7 @@ class App extends Component {
         <Switch>
           <Route path="*" component={WorldMap} />
         </Switch>
-        <Dpad />
+        <Dpad handleDpadPress={this.handleDpadPress} />
         <FighterGrid onKeyDown={this.handleKeyPress}>
           {this.renderFighterCells()}
         </FighterGrid>
@@ -71,31 +79,47 @@ class App extends Component {
 }
 
 const AppWrap = styled.div`
-  background: ${({ theme }) => theme.backgroundColor};
+  background: ${({ theme }) => theme.color.lightGray};
   height: 100%;
   display: grid;
   grid-template-areas:
+    '. .'
     'world-map world-map'
-    'dpad fighters';
+    'dpad fighters'
+    '. .';
   flex-direction: column;
   align-items: center;
   justify-content: center;
   outline: none;
-  border: 2px solid red;
 `;
 
 const FighterGrid = styled(Grid)`
   grid-area: fighters;
-  width: 100%;
+  width: ${FIGHTER_GRID_WIDTH}px;
   outline: none;
   display: grid;
-  grid-template-columns: repeat(6, 120px);
-  border: 2px solid hotpink;
+  grid-template-columns: repeat(6, ${FIGHTER_GRID_WIDTH / 6}px);
+  border: 2px solid ${({ theme }) => theme.color.darkGray};
 `;
 
 const FighterCell = styled(Cell)`
   border: 2px solid ${({ theme }) => theme.color.darkGray};
   outline: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+const FighterLabel = styled.label`
+  height: 1.5em;
+  color: white;
+  background: ${({ theme }) => theme.color.primary};
+  font-size: 12px;
+  margin-top: -2em;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
 `;
 
 export default withRouter(App);
