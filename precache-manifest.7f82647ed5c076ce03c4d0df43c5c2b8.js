@@ -1,23 +1,27 @@
 self.__precacheManifest = [
   {
-    "revision": "0759b9f77b367663fa09",
-    "url": "/street_fighter_selection/static/css/main.ffffac8d.chunk.css"
+    "revision": "86feea4282a9e2f5c7d3",
+    "url": "/street_fighter_selection/static/css/main.9491e74e.chunk.css"
   },
   {
-    "revision": "0759b9f77b367663fa09",
-    "url": "/street_fighter_selection/static/js/main.0759b9f7.chunk.js"
+    "revision": "86feea4282a9e2f5c7d3",
+    "url": "/street_fighter_selection/static/js/main.86feea42.chunk.js"
   },
   {
-    "revision": "1df3452b911c2a1ea671",
-    "url": "/street_fighter_selection/static/js/1.1df3452b.chunk.js"
+    "revision": "3ad28e5d015187837dda",
+    "url": "/street_fighter_selection/static/js/1.3ad28e5d.chunk.js"
   },
   {
     "revision": "83a2785086eb9c8ecd6e",
     "url": "/street_fighter_selection/static/js/runtime~main.83a27850.js"
   },
   {
-    "revision": "23f30fd9f9abe4b41fd39abb4fe31efa",
-    "url": "/street_fighter_selection/static/media/world.23f30fd9.svg"
+    "revision": "2d6a896107ca80045c8f3a02279a289f",
+    "url": "/street_fighter_selection/static/media/github.2d6a8961.svg"
+  },
+  {
+    "revision": "1f6342abeae9095164fa94fade7f92eb",
+    "url": "/street_fighter_selection/static/media/world.1f6342ab.svg"
   },
   {
     "revision": "f72a49f6d95ded209c505386f0927d5d",
@@ -100,7 +104,7 @@ self.__precacheManifest = [
     "url": "/street_fighter_selection/static/media/zangief.70c916ff.gif"
   },
   {
-    "revision": "9270241c094fde99a2ade3c7f5321d69",
+    "revision": "6ef344f34b9081c6ecd5bbcae4fe46e1",
     "url": "/street_fighter_selection/index.html"
   }
 ];
