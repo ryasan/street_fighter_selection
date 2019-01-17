@@ -9,17 +9,7 @@ import styled from 'styled-components';
 import WorldMap from './components/WorldMap';
 import Dpad from './components/Dpad';
 import Player1 from './components/Player1';
-import { AppWrap, Cell, Grid, Img } from './components/common';
-
-const FighterGrid = styled(Grid)`
-  grid-area: fighters;
-  justify-items: center;
-  outline: none;
-  margin-top: 5%;
-  display: grid;
-  grid-template-columns: repeat(6, 120px);
-  border: 2px solid hotpink;
-`;
+import { Cell, Grid, Img } from './components/common';
 
 class App extends Component {
   constructor(props) {
@@ -49,14 +39,14 @@ class App extends Component {
   renderFighterCells = () => {
     return flatten(this.sf.fighterNames).map((fighter, i) => {
       return (
-        <Cell
+        <FighterCell
           key={i}
           onKeyPress={this.handleKeyPress}
           active={this.state.active === fighter}
         >
           {this.state.active === fighter ? <Player1 /> : ''}
           <Img src={portraitIds[fighter]} alt={fighter} />
-        </Cell>
+        </FighterCell>
       );
     });
   };
@@ -79,5 +69,33 @@ class App extends Component {
     );
   };
 }
+
+const AppWrap = styled.div`
+  background: ${({ theme }) => theme.backgroundColor};
+  height: 100%;
+  display: grid;
+  grid-template-areas:
+    'world-map world-map'
+    'dpad fighters';
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: 2px solid red;
+`;
+
+const FighterGrid = styled(Grid)`
+  grid-area: fighters;
+  width: 100%;
+  outline: none;
+  display: grid;
+  grid-template-columns: repeat(6, 120px);
+  border: 2px solid hotpink;
+`;
+
+const FighterCell = styled(Cell)`
+  border: 2px solid ${({ theme }) => theme.color.darkGray};
+  outline: none;
+`;
 
 export default withRouter(App);

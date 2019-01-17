@@ -1,5 +1,3 @@
-import { fighterNames } from './constants';
-
 class StreetFighter {
   constructor() {
     this.keys = {

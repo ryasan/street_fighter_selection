@@ -1,11 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-const DpadArea = styled.div`
-  grid-area: dpad;
-  border: 2px solid yellow;
-`;
-
 class Dpad extends Component {
   render = () => {
     return (
@@ -18,5 +13,10 @@ class Dpad extends Component {
     );
   };
 }
+
+const DpadArea = styled.div`
+  grid-area: dpad;
+  border: 2px solid yellow;
+`;
 
 export default Dpad;

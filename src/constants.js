@@ -39,4 +39,7 @@ const mapIds = {
   16: { name: 'SPAIN', country: Spain, fighter: 'Vega' }
 };
 
-export { portraitIds, mapIds };
+const MAP_ROWS = 8;
+const MAP_COLUMNS = 12;
+
+export { portraitIds, mapIds, MAP_ROWS, MAP_COLUMNS };
