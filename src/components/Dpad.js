@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-
+import { slideIn } from "./../utils";
 class Dpad extends Component {
   handleClick = e => {
     this.props.handleDpadPress(e.target.value);
@@ -27,6 +27,9 @@ const DpadArea = styled.ul`
     '. up .'
     'left . right'
     '. down .';
+  left: -100vw;
+  position: relative;
+  animation: ${slideIn('left')} 1s forwards;
 `;
 
 const DpadWrap = styled.li`

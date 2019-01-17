@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import { World } from './../images';
 import { mapIds, MAP_COLUMNS, MAP_ROWS } from './../constants';
-import { generateMatrix } from './../utils';
+import { generateMatrix, slideIn } from './../utils';
 // components
 import { Cell, Grid } from './common';
 
@@ -37,6 +37,9 @@ const MapGrid = styled(Grid)`
   background-size: contain;
   grid-template-columns: repeat(${MAP_COLUMNS}, 1fr);
   grid-template-rows: repeat(${MAP_ROWS}, 1fr);
+  top: -100vh;
+  position: relative;
+  animation: ${slideIn('top')} 1s forwards;
 `;
 
 const MapCellWrap = styled.div`

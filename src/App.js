@@ -3,7 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 import { withRouter } from 'react-router';
 import StreetFighter from './StreetFighter';
 import { portraitIds, FIGHTER_GRID_WIDTH } from './constants';
-import { flatten } from './utils';
+import { flatten, slideIn } from './utils';
 import styled from 'styled-components';
 // components
 import AppBar from './components/AppBar';
@@ -72,7 +72,7 @@ class App extends Component {
           <Route path="*" component={WorldMap} />
         </Switch>
         <Dpad handleDpadPress={this.handleDpadPress} />
-        <FighterGrid onKeyDown={this.handleKeyPress}>
+        <FighterGrid onKeyDown={this.handleKeyPress} data-aos="slide-left">
           {this.renderFighterCells()}
         </FighterGrid>
       </AppWrap>
@@ -101,6 +101,9 @@ const FighterGrid = styled(Grid)`
   display: grid;
   grid-template-columns: repeat(6, ${FIGHTER_GRID_WIDTH / 6}px);
   border: 2px solid ${({ theme }) => theme.color.darkGray};
+  right: -100vw;
+  position: relative;
+  animation: ${slideIn('right')} 1s forwards;
 `;
 
 const FighterCell = styled(Cell)`
