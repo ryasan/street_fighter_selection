@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/street_fighter_selection/precache-manifest.4144cea7342b106ad249826a88ead91f.js"
+  "/street_fighter_selection/precache-manifest.60a088c7e4fd20bbbf093bfd2b76c14f.js"
 );
 
 workbox.clientsClaim();
