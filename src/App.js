@@ -6,6 +6,7 @@ import { portraitIds, FIGHTER_GRID_WIDTH } from './constants';
 import { flatten } from './utils';
 import styled from 'styled-components';
 // components
+import AppBar from './components/AppBar';
 import WorldMap from './components/WorldMap';
 import Dpad from './components/Dpad';
 import Player1 from './components/Player1';
@@ -66,6 +67,7 @@ class App extends Component {
         onKeyDown={this.handleKeyPress}
         tabIndex="0"
       >
+        <AppBar />
         <Switch>
           <Route path="*" component={WorldMap} />
         </Switch>
@@ -79,11 +81,10 @@ class App extends Component {
 }
 
 const AppWrap = styled.div`
-  background: ${({ theme }) => theme.color.lightGray};
+  background: ${({ theme }) => theme.backgroundColor};
   height: 100%;
   display: grid;
   grid-template-areas:
-    '. .'
     'world-map world-map'
     'dpad fighters'
     '. .';

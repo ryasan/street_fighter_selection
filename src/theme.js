@@ -1,4 +1,4 @@
-const primary = '#d7051c';
+const primary = '#e60000';
 const lightGray = '#eee';
 const darkGray = '#8d8d8d';
 const dark = '#1d1d1d';
@@ -13,5 +13,5 @@ export default {
     white
   },
   lightBorder: `2px solid ${lightGray}`,
-  backgroundColor: '#06004a'
+  backgroundColor: '#bfbfbf'
 };

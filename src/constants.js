@@ -54,5 +54,13 @@ const mapIds = {
 const MAP_ROWS = 8;
 const MAP_COLUMNS = 12;
 const FIGHTER_GRID_WIDTH = 720;
+const GITHUB_REPO_URL = 'https://github.com/ryasan86/street_fighter_selection';
 
-export { portraitIds, mapIds, FIGHTER_GRID_WIDTH, MAP_ROWS, MAP_COLUMNS };
+export {
+  portraitIds,
+  mapIds,
+  FIGHTER_GRID_WIDTH,
+  MAP_ROWS,
+  MAP_COLUMNS,
+  GITHUB_REPO_URL
+};

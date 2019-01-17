@@ -52,6 +52,8 @@ const MapCell = styled(Cell)`
   background-size: cover;
   border: none;
   border-radius: 2px;
+  box-shadow: ${({ active, theme }) =>
+    active ? `inset 0px 0px 0px 2px ${theme.color.darkGray};` : 'none'};
 `;
 
 export default WorldMap;

@@ -1,3 +1,4 @@
+import GH_LOGO from './github.svg';
 // world
 import World from './world.svg';
 import Brazil from './br.svg';
@@ -23,6 +24,7 @@ import Vega from './vega.gif';
 import Zangief from './zangief.gif';
 
 export {
+  GH_LOGO,
   World,
   Brazil,
   China,
