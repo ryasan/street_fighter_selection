@@ -1,9 +1,9 @@
 {
   "main.css": "/street_fighter_selection/static/css/main.9491e74e.chunk.css",
-  "main.js": "/street_fighter_selection/static/js/main.86feea42.chunk.js",
-  "main.js.map": "/street_fighter_selection/static/js/main.86feea42.chunk.js.map",
-  "static/js/1.3ad28e5d.chunk.js": "/street_fighter_selection/static/js/1.3ad28e5d.chunk.js",
-  "static/js/1.3ad28e5d.chunk.js.map": "/street_fighter_selection/static/js/1.3ad28e5d.chunk.js.map",
+  "main.js": "/street_fighter_selection/static/js/main.3e91512e.chunk.js",
+  "main.js.map": "/street_fighter_selection/static/js/main.3e91512e.chunk.js.map",
+  "static/js/1.079c0b20.chunk.js": "/street_fighter_selection/static/js/1.079c0b20.chunk.js",
+  "static/js/1.079c0b20.chunk.js.map": "/street_fighter_selection/static/js/1.079c0b20.chunk.js.map",
   "runtime~main.js": "/street_fighter_selection/static/js/runtime~main.83a27850.js",
   "runtime~main.js.map": "/street_fighter_selection/static/js/runtime~main.83a27850.js.map",
   "static/media/github.svg": "/street_fighter_selection/static/media/github.2d6a8961.svg",
@@ -30,6 +30,6 @@
   "static/media/zangief.gif": "/street_fighter_selection/static/media/zangief.70c916ff.gif",
   "static/css/main.9491e74e.chunk.css.map": "/street_fighter_selection/static/css/main.9491e74e.chunk.css.map",
   "index.html": "/street_fighter_selection/index.html",
-  "precache-manifest.7f82647ed5c076ce03c4d0df43c5c2b8.js": "/street_fighter_selection/precache-manifest.7f82647ed5c076ce03c4d0df43c5c2b8.js",
+  "precache-manifest.4144cea7342b106ad249826a88ead91f.js": "/street_fighter_selection/precache-manifest.4144cea7342b106ad249826a88ead91f.js",
   "service-worker.js": "/street_fighter_selection/service-worker.js"
 }
