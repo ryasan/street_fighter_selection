@@ -10,12 +10,12 @@ class WorldMap extends Component {
   renderMapCells = () => {
     return generateMatrix(MAP_ROWS, MAP_COLUMNS).map((_, i) => {
       if (mapIds[i]) {
-        const activeFighter = this.props.location.state;
-        const { country, fighter, name } = mapIds[i];
-        const active = fighter === activeFighter;
+        const { country, name, fighter } = mapIds[i];
         return (
-          <MapCellWrap key={i} active={active}>
-            <MapCell countryBg={country} active={active} />
+          <MapCellWrap key={i}>
+            <MapCell
+              countryBg={country}
+              active={this.props.selectedFighter === fighter} />
             {name}
           </MapCellWrap>
         );

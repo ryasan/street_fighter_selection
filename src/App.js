@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import { Switch, Route } from 'react-router-dom';
-import { withRouter } from 'react-router';
 import StreetFighter from './StreetFighter';
 import styled from 'styled-components';
 // components
@@ -14,31 +12,26 @@ class App extends Component {
     super(props);
     this.sf = new StreetFighter();
     this.state = {
-      active: ''
+      selectedFighter: ''
     };
   }
 
   componentDidMount = () => {
-    this.setState({ active: 'Ryu' });
+    this.setState({ selectedFighter: 'Ryu' });
     this.elFocus.focus();
   };
 
-  goToFighter = keyCode => {
+  selectFighter = keyCode => {
     const fighter = this.sf.selectFighter(keyCode);
-    this.setState({ active: fighter }, () => {
-      this.props.history.push({
-        pathname: `/${fighter.toLowerCase()}`,
-        state: fighter
-      });
-    });
+    this.setState({ selectedFighter: fighter });
   };
 
   handleKeyPress = e => {
-    this.goToFighter(e.keyCode);
+    this.selectFighter(e.keyCode);
   };
 
   handleDpadPress = keyCode => {
-    this.goToFighter(keyCode);
+    this.selectFighter(keyCode);
   };
 
   render = () => {
@@ -48,15 +41,14 @@ class App extends Component {
         onKeyDown={this.handleKeyPress}
         tabIndex="0">
         <AppBar />
-        <Switch>
-          <Route path="*" component={WorldMap} />
-        </Switch>
+        <WorldMap selectedFighter={this.state.selectedFighter} />
         <Dpad handleDpadPress={this.handleDpadPress} />
         <Fighters
           onKeyDown={this.handleKeyPress}
           fighterNames={this.sf.fighterNames}
           handleKeyPress={this.handleKeyPress}
-          active={this.state.active}/>
+          active={this.state.selectedFighter}
+        />
       </AppWrap>
     );
   };
@@ -76,4 +68,4 @@ const AppWrap = styled.div`
   outline: none;
 `;
 
-export default withRouter(App);
+export default App;
