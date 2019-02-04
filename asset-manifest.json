@@ -1,9 +1,9 @@
 {
-  "main.css": "/street_fighter_selection/static/css/main.9491e74e.chunk.css",
-  "main.js": "/street_fighter_selection/static/js/main.04128e6c.chunk.js",
-  "main.js.map": "/street_fighter_selection/static/js/main.04128e6c.chunk.js.map",
-  "static/js/1.63d00c98.chunk.js": "/street_fighter_selection/static/js/1.63d00c98.chunk.js",
-  "static/js/1.63d00c98.chunk.js.map": "/street_fighter_selection/static/js/1.63d00c98.chunk.js.map",
+  "main.css": "/street_fighter_selection/static/css/main.9cf68de6.chunk.css",
+  "main.js": "/street_fighter_selection/static/js/main.13daa601.chunk.js",
+  "main.js.map": "/street_fighter_selection/static/js/main.13daa601.chunk.js.map",
+  "static/js/1.fa323e4b.chunk.js": "/street_fighter_selection/static/js/1.fa323e4b.chunk.js",
+  "static/js/1.fa323e4b.chunk.js.map": "/street_fighter_selection/static/js/1.fa323e4b.chunk.js.map",
   "runtime~main.js": "/street_fighter_selection/static/js/runtime~main.83a27850.js",
   "runtime~main.js.map": "/street_fighter_selection/static/js/runtime~main.83a27850.js.map",
   "static/media/github.svg": "/street_fighter_selection/static/media/github.2d6a8961.svg",
@@ -28,8 +28,8 @@
   "static/media/dhalsim.gif": "/street_fighter_selection/static/media/dhalsim.8191708f.gif",
   "static/media/vega.gif": "/street_fighter_selection/static/media/vega.06c810f4.gif",
   "static/media/zangief.gif": "/street_fighter_selection/static/media/zangief.70c916ff.gif",
-  "static/css/main.9491e74e.chunk.css.map": "/street_fighter_selection/static/css/main.9491e74e.chunk.css.map",
+  "static/css/main.9cf68de6.chunk.css.map": "/street_fighter_selection/static/css/main.9cf68de6.chunk.css.map",
   "index.html": "/street_fighter_selection/index.html",
-  "precache-manifest.405b77d2d919ba88e97407fb9346d278.js": "/street_fighter_selection/precache-manifest.405b77d2d919ba88e97407fb9346d278.js",
+  "precache-manifest.9d193140facb6421a565487a3870f52f.js": "/street_fighter_selection/precache-manifest.9d193140facb6421a565487a3870f52f.js",
   "service-worker.js": "/street_fighter_selection/service-worker.js"
 }
