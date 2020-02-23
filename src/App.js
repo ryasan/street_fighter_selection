@@ -30,9 +30,11 @@ class App extends Component {
     this.selectFighter(e.keyCode);
   };
 
-  handleDpadPress = keyCode => {
-    this.selectFighter(keyCode);
+  handleDpadPress = e => {
+    this.selectFighter(e.target.value);
   };
+
+  handle
 
   render = () => {
     return (

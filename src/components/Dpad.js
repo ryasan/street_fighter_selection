@@ -2,17 +2,13 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import { slideIn } from "./../utils";
 class Dpad extends Component {
-  handleClick = e => {
-    this.props.handleDpadPress(e.target.value);
-  };
-
   render = () => {
     return (
       <DpadArea>
-        <DpadWrapUp value={38} onClick={this.handleClick} />
-        <DpadWrapDown value={40} onClick={this.handleClick} />
-        <DpadWrapLeft value={37} onClick={this.handleClick} />
-        <DpadWrapRight value={39} onClick={this.handleClick} />
+        <DpadWrapUp value={38} onClick={this.props.handleDpadPress} />
+        <DpadWrapDown value={40} onClick={this.props.handleDpadPress} />
+        <DpadWrapLeft value={37} onClick={this.props.handleDpadPress} />
+        <DpadWrapRight value={39} onClick={this.props.handleDpadPress} />
       </DpadArea>
     );
   };
