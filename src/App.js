@@ -57,6 +57,7 @@ class App extends Component {
 }
 
 const AppWrap = styled.div`
+  background: blue;
   background: ${({ theme }) => theme.backgroundColor};
   height: 100%;
   display: grid;
