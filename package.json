@@ -2,7 +2,7 @@
   "name": "street_fighter_selection",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://ryasan86.github.io/street_fighter_selection",
+  "homepage": "http://ryasan.github.io/street_fighter_selection",
   "dependencies": {
     "polished": "^2.3.3",
     "react": "^16.7.0",
