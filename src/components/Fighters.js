@@ -1,29 +1,10 @@
-import React, {Component} from 'react';
-import {portraitIds, FIGHTER_GRID_WIDTH} from './../constants';
-import {flatten, slideIn} from './../utils';
+import React from 'react';
 import styled from 'styled-components';
-// components
-import Player1 from './Player1';
+
 import {Cell, Grid, Img} from './common';
-
-class Fighters extends Component {
-	renderFighterCells = () => {
-		const {active, fighterNames} = this.props;
-		return flatten(fighterNames).map((fighter, i) => {
-			return (
-				<FighterCell key={i} onKeyPress={this.handleKeyPress} active={active === fighter}>
-					{active === fighter ? <Player1 /> : ''}
-					<Img src={portraitIds[fighter]} alt={fighter} />
-					{active === fighter ? <FighterLabel>{fighter}</FighterLabel> : ''}
-				</FighterCell>
-			);
-		});
-	};
-
-	render = () => {
-		return <FighterGrid onKeyDown={this.handleKeyPress}>{this.renderFighterCells()}</FighterGrid>;
-	};
-}
+import {slideIn} from './../utils/slideInAnimation';
+import {portraitIds, FIGHTER_GRID_WIDTH} from './../constants';
+import Player1 from './Player1';
 
 const FighterGrid = styled(Grid)`
 	grid-area: fighters;
@@ -57,4 +38,22 @@ const FighterLabel = styled.label`
 	justify-content: center;
 `;
 
-export default Fighters;
+export default function Fighters(props) {
+	const renderFighterCells = () => {
+		const {active, fighterNames} = props;
+
+		return [].concat(...fighterNames).map((fighter, i) => {
+			return (
+				<FighterCell key={i} onKeyPress={props.handleKeyPress} active={active === fighter}>
+					{active === fighter ? <Player1 /> : ''}
+
+					<Img src={portraitIds[fighter]} alt={fighter} />
+
+					{active === fighter ? <FighterLabel>{fighter}</FighterLabel> : ''}
+				</FighterCell>
+			);
+		});
+	};
+
+	return <FighterGrid onKeyDown={props.handleKeyPress}>{renderFighterCells()}</FighterGrid>;
+}

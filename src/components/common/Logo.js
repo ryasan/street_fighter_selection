@@ -1,4 +1,4 @@
-import styled, { keyframes } from 'styled-components';
+import styled, {keyframes} from 'styled-components';
 
 const wobble = keyframes`
   0% { transform: rotate(0deg) }
@@ -9,13 +9,13 @@ const wobble = keyframes`
 `;
 
 const Logo = styled.img`
-  width: 25px;
-  height: 25px;
-  cursor: pointer;
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
 
-  &:hover {
-    animation: ${wobble} 1s;
-  }
+	&:hover {
+		animation: ${wobble} 1s;
+	}
 `;
 
-export { Logo };
+export {Logo};

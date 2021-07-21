@@ -5,7 +5,7 @@ const darkGray = '#8d8d8d';
 const dark = '#1d1d1d';
 const white = '#fff';
 
-export default {
+const theme = {
 	color: {
 		primary,
 		secondary,
@@ -15,5 +15,6 @@ export default {
 		white,
 	},
 	lightBorder: `2px solid ${lightGray}`,
-	backgroundColor: '#000',
 };
+
+export default theme;

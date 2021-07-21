@@ -1,5 +1,5 @@
 import GH_LOGO from './github.svg';
-// world
+
 import World from './world.svg';
 import Brazil from './br.svg';
 import China from './cn.svg';
@@ -9,7 +9,7 @@ import Japan from './jp.svg';
 import USSR from './ru.svg';
 import Thailand from './th.svg';
 import USA from './us.svg';
-// fighters
+
 import Balrog from './balrog.gif';
 import Blanka from './blanka.gif';
 import Ryu from './ryu.gif';
