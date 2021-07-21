@@ -15,5 +15,5 @@ export default {
 		white,
 	},
 	lightBorder: `2px solid ${lightGray}`,
-	backgroundColor: 'linear-gradient(45deg, rgba(63,63,255,1) 0%, rgba(0,146,255,1) 100%)',
+	backgroundColor: '#000',
 };
