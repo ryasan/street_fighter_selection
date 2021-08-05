@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/street_fighter_selection/static/css/main.c8d98301.chunk.css",
-    "main.js": "/street_fighter_selection/static/js/main.c51f7997.chunk.js",
-    "main.js.map": "/street_fighter_selection/static/js/main.c51f7997.chunk.js.map",
+    "main.js": "/street_fighter_selection/static/js/main.09faee0d.chunk.js",
+    "main.js.map": "/street_fighter_selection/static/js/main.09faee0d.chunk.js.map",
     "runtime-main.js": "/street_fighter_selection/static/js/runtime-main.79a55115.js",
     "runtime-main.js.map": "/street_fighter_selection/static/js/runtime-main.79a55115.js.map",
     "static/js/2.4c83239f.chunk.js": "/street_fighter_selection/static/js/2.4c83239f.chunk.js",
@@ -18,7 +18,7 @@
     "static/media/dhalsim.3370fcb9.gif": "/street_fighter_selection/static/media/dhalsim.3370fcb9.gif",
     "static/media/ehonda.bc537649.gif": "/street_fighter_selection/static/media/ehonda.bc537649.gif",
     "static/media/es.162b030b.svg": "/street_fighter_selection/static/media/es.162b030b.svg",
-    "static/media/github.8be69bf0.svg": "/street_fighter_selection/static/media/github.8be69bf0.svg",
+    "static/media/github.57221904.svg": "/street_fighter_selection/static/media/github.57221904.svg",
     "static/media/guile.7150fd3d.gif": "/street_fighter_selection/static/media/guile.7150fd3d.gif",
     "static/media/in.c1de4280.svg": "/street_fighter_selection/static/media/in.c1de4280.svg",
     "static/media/jp.4ecbd30a.svg": "/street_fighter_selection/static/media/jp.4ecbd30a.svg",
@@ -37,6 +37,6 @@
     "static/js/runtime-main.79a55115.js",
     "static/js/2.4c83239f.chunk.js",
     "static/css/main.c8d98301.chunk.css",
-    "static/js/main.c51f7997.chunk.js"
+    "static/js/main.09faee0d.chunk.js"
   ]
 }
