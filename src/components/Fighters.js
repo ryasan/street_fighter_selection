@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 
 import {Cell, Grid, Img} from './common';
-import {slideIn} from './../utils/slideInAnimation';
 import {portraitIds, FIGHTER_GRID_WIDTH} from './../constants';
+import {slideIn} from './../utils/slideInAnimation';
 import Player1 from './Player1';
 
 const FighterGrid = styled(Grid)`
