@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import {slideIn} from './../utils/slideInAnimation';
 
-const Container = styled.div`
+const Container = styled.ul`
 	animation: ${slideIn('left')} 1s forwards;
 	display: grid;
 	grid-area: dpad;
@@ -17,7 +17,7 @@ const Container = styled.div`
 	position: relative;
 `;
 
-const ButtonBase = styled.button`
+const ButtonBase = styled.li`
 	align-items: center;
 	background: gray;
 	background: linear-gradient(0deg, rgba(230, 0, 0, 1) 0%, rgba(255, 51, 51, 1) 100%);
